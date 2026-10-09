@@ -1,68 +1,65 @@
 <div align="center">
-  <img src="public/logo.png" alt="X Downloader Logo" width="200" />
-  
-  # X Downloader
+  <h1 align="center">Minihanzi - Từ điển Trung-Việt</h1>
 
-  **A fast, free, and ad-free tool to download high-quality videos and images from X (Twitter).**
+  **A modern, lightning-fast Chinese-Vietnamese dictionary web application.**
 
-  [![React](https://img.shields.io/badge/React-19.2-blue?logo=react&logoColor=white)](https://react.dev)
-  [![Vite](https://img.shields.io/badge/Vite-6.2-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+  [![React](https://img.shields.io/badge/React-19.3-blue?logo=react&logoColor=white)](https://react.dev)
+  [![Vite](https://img.shields.io/badge/Vite-8.3-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.3-38B2AC?logo=tailwind-css&logoColor=white)](https://tailwindcss.com)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-7.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-6.0-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 </div>
 
 ---
 
-## ✨ Features
+## ✨ Tính năng nổi bật (Features)
 
-- 📥 **Media Downloading**: Extract and download original, high-quality images and videos from any X (Twitter) post.
-- ⚡ **Lightning Fast**: Built with React & Vite for instantaneous performance.
-- 🌍 **AI Translation Built-in**: Seamlessly translate foreign posts to your native language using Google Translate or Gemini AI models.
-- 🌓 **Dark Mode Ready**: Beautiful, minimal UI with automatic theme switching based on your system preference.
-- 💾 **Smart Caching**: Optimized network requests utilizing TanStack Query for a buttery smooth experience.
-- 🕒 **History Management**: Keep track of your previously analyzed posts right in your browser storage.
+- 📖 **Tra cứu chuyên sâu**: Dữ liệu từ vựng Hán-Việt phong phú, phân loại nghĩa theo từ loại (Động từ, Danh từ, Tính từ...) kèm theo nhiều câu ví dụ minh họa ngữ cảnh.
+- ✍️ **Sơ đồ nét chữ (Stroke Order)**: Hiển thị và chạy animation hướng dẫn cách viết từng nét của chữ Hán chuẩn xác (tích hợp `hanzi-writer`).
+- 🔊 **Phát âm & Karaoke Highlight**: Tính năng đọc audio câu ví dụ đồng bộ highlight từng chữ theo thời gian thực (Karaoke-style) giúp người học dễ dàng nắm bắt nhịp điệu.
+- 🤖 **Giải thích ngữ pháp bằng AI**: Tích hợp module AI để giải nghĩa sâu các cấu trúc ngữ pháp khó hiểu trong câu.
+- ⚡ **Hiệu năng siêu tốc**: Kiến trúc State cục bộ kết hợp với cơ chế Catching của TanStack Query giúp gõ tìm kiếm không độ trễ.
+- 🌓 **Giao diện hiện đại**: Thiết kế tối giản, hỗ trợ tự động chuyển đổi Dark/Light mode dựa theo cấu hình thiết bị.
 
 ## 🛠 Tech Stack
 
-- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
-- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) + [Shadcn UI](https://ui.shadcn.com/)
-- **State Management**: [TanStack Query](https://tanstack.com/query)
-- **Forms & Validation**: [TanStack Form](https://tanstack.com/form) + [Zod](https://zod.dev/)
+- **Framework**: [React 19](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/) (powered by [Base UI](https://base-ui.com/))
+- **Data Fetching**: [@tanstack/react-query](https://tanstack.com/query)
 - **Icons**: [Lucide React](https://lucide.dev/)
 
-## 🚀 Getting Started
+## 🚀 Cài đặt & Chạy dự án (Getting Started)
 
-### Prerequisites
+### Yêu cầu hệ thống
 
-Ensure you have [Node.js](https://nodejs.org/) (v20+) and [pnpm](https://pnpm.io/) installed.
+Hãy chắc chắn máy tính của bạn đã cài đặt [Node.js](https://nodejs.org/) (v20+) và [pnpm](https://pnpm.io/).
 
-### Installation
+### Các bước khởi chạy
 
-1. Clone the repository:
+1. Clone repository về máy:
 ```bash
-git clone https://github.com/your-username/x-downloader.git
-cd x-downloader
+git clone https://github.com/yngpiu/hanzi.git
+cd hanzi
 ```
 
-2. Install dependencies:
+2. Cài đặt các thư viện (dependencies):
 ```bash
 pnpm install
 ```
 
-3. Start the development server:
+3. Khởi động server môi trường phát triển (Development):
 ```bash
 pnpm dev
 ```
-The application will be running at `http://localhost:3002`.
+Ứng dụng sẽ chạy tại địa chỉ: `http://localhost:5173`.
 
-## ⚙️ Environment Variables
+## 📦 Build lên Production
 
-Create a `.env` file in the root directory (optional, used for dynamic SEO generation during build):
-
-```env
-VITE_SITE_URL=https://your-domain.com
+Để build ra file tĩnh tối ưu nhất cho Production (như Vercel, Cloudflare Pages...):
+```bash
+pnpm build
 ```
 
-## 📝 License
+---
 
-This project is open-source and available under the [MIT License](LICENSE).
+*Được phát triển với mục đích học tập và cung cấp công cụ tra cứu tối ưu nhất cho người học tiếng Trung.*
