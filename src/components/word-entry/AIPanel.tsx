@@ -39,7 +39,7 @@ export function AIPanel({
 
 	const qas = data.result[0].chat_gpt;
 	return (
-		<Accordion type="single" collapsible className="w-full">
+		<Accordion className="w-full">
 			{qas.map((qa, i) => (
 				<AccordionItem key={i} value={`qa-${i}`}>
 					<AccordionTrigger className="text-sm gap-2">
