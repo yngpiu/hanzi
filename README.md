@@ -1,4 +1,5 @@
 <div align="center">
+  <img src="public/logo.png" alt="Minihanzi Logo" width="150" />
   <h1 align="center">Minihanzi - Từ điển Trung-Việt</h1>
 
   **A modern, lightning-fast Chinese-Vietnamese dictionary web application.**
